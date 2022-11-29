@@ -1,0 +1,99 @@
+.home-page {
+
+    //place right of sidebar
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        //center vertically (top edge)
+        top: 50%;
+        //center vertically (actual center)
+        transform: translateY(-50%);
+        //cut right edge to 40%, 60% of other elements will be on right
+        width: 40%;
+        //?same height as .container
+        max-height: 90%;
+    }
+
+    //*IMPORTANT colored and sized to blend with img as a sentence
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        //? S letter img that blends with the text 
+        //!change img to J
+        img {
+            width:32px;
+            margin-left: 20px;
+            //fade in animation
+            opacity: 0;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+
+        //h1::before
+        //?visible tag gives off developer vibe design
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            color: #ffd700;
+            opacity: 0.6;
+            //place above h1 and indented
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+        }
+
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            color: #ffd700;
+            opacity: 0.6;
+            //place right of h1 and indented
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+
+            animation: fadeIn 1s 1.7s backwards;
+        }
+    } //!h1
+
+    //?subtitle
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: 'san-serif';
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    } //!h2
+
+    //?contact me Link 
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        //?some reason margin only works when float
+        //?separates from absolute container
+        float: left;
+        margin-top: 25px;
+        animation: fadeIn 1s 1.8s backwards;
+        //?not sure why this is needed
+        white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
+    }//!flat-button
+}//!home-page

@@ -1,0 +1,146 @@
+// navbar container will be to left 
+.nav-bar {
+    background: #181818;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: 8px 0;
+    }
+
+    img {
+        display: block;
+        margin: 8px auto;
+        width: 24px;
+        height: auto;
+    
+        
+        //& same as img.sub-logo  
+        &.sub-logo {
+            width: 50px;
+        }
+    }
+
+    //nav links separate from logo
+    nav {
+        display: block; 
+        text-align: center;
+        position: absolute;
+        height: 210px;
+        //centered vertically
+        top: 50%;
+        //push upwards
+        margin-top: -120px;
+        //100% of parent width
+        width: 100%;
+
+        //a refers to NavLink
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            display: block;
+            //?line height will be same as height, to space out links evenly
+            line-height: 51px;
+            height: 51px;
+            position:relative;
+            text-decoration: none;
+
+            //transition for all links, iTag will be used for ???
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            //a:hover 
+            &:hover {
+                color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+            //a:after 
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+            //text for the link, this is whats being affected 
+            //by hover and after 
+            &:first-child {
+                //? '/' = HOME   ::after = text after link
+                &::after {
+                    content: 'HOME';
+                }
+            }
+        } //!a
+
+        //?these 2 links also affected by hover and after
+        //?just placing text for them 
+        //? COULD just place inside a{} and use &:about-link etc.
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: 'CONTACT';
+            }
+        }
+
+        a.active {
+            //active icon yellow
+            svg {
+                color: #ffd700;
+            }
+        }
+    } //!.nav
+
+    //?social media icons
+    ul {
+        //set at bottom of screen
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        //center horizontally
+        text-align: center;
+
+        li {
+            a {
+                //spread out icons vertically
+                padding: 7px 0;
+                display: block;
+                //size of icons
+                font-size: 15px;
+                line-height: 16px;
+
+                //?icons are svgs
+                &:hover svg {
+                    color: #ffd700
+                }
+            }
+        }
+
+    } //!ul
+} //!.nav-bar

@@ -1,0 +1,49 @@
+//<Layout/> main wrapper div 
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+//spans that identify the page
+.top-tags {
+    bottom: auto;
+    top: 35px;
+}
+
+.tags {
+    color: #ffd700;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+}
+
+.bottom-tag-html {
+    margin-left: -20px;
+}
+
+
+
+//Connected to <Home/>'s container class 
+//*These styles are global for all <Layout/> components
+//?container will have fade in animation 
+.container {
+    width: 100%;
+    will-change: contents; //!learn
+    height: 90%;
+    min-height: 566px;
+    //? centers vertical, with 5% on top and bottom, (since 90%)
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    //?fade animation
+    opacity: 0;
+    transform-style: preserve-3d; //!learn
+    //?from dependency Animation.css
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}

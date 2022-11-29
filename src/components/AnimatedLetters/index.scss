@@ -1,0 +1,34 @@
+//default style for animated letters 
+.text-animate {
+    display: inline-block;
+    //invisible to visible at same time
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    //? small change, (doesnt jump around)??
+    min-width: 10px;
+}
+
+//*hover effect class, doesnt use delay
+.text-animate-hover {
+    //? same dont jump around 
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+//!LEARN
+//*Sass for loop 
+//uses idx for each letter's delay
+//? "text-animate _(1-35)"  
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {
+        //tenths of a second i
+        animation-delay: #{$i /10}s;
+    }
+}
