@@ -17,7 +17,9 @@ const Logo = () => {
 
 
     //solid logo IMG, transparent logo SVG 
-    //to target SVG, SVG container is in gTag 
+    //*to target SVG, SVG container is in gTag
+    //*logo-container: svg, img solid logo
+    //*svg-container: gTag for outline logo 
     return (
         <div className='logo-container'>
             <img className='solid-logo' src={LogoS} alt='solidIMG'/>
