@@ -10,8 +10,17 @@
     bottom: 0;
     left: auto;
     margin: auto;
-    //container fade-in animation
+    //container fade-in animation (affects outline)
     opacity: 0;
+
+
+
+    //!CUSTOM
+    animation: fadeIn 4s 1s;
+    animation-fill-mode: forwards;
+
+    //!END CUSTOM
+    
 
     //transparent outline logo
     svg {
@@ -37,6 +46,11 @@
         transform: rotateZ(30deg);
         //on top of container
         z-index: 1;
+
+        //!CUSTOM
+        animation: fadeIn 8s 1s;
+        animation-fill-mode: forwards;
+        //!END CUSTOM
     }
 
     //stroke settings to show outline logo

@@ -1,20 +1,10 @@
 import './index.scss';
-import useRef from 'react';
 import LogoS from '../../../assets/images/logo-s.png';
 
 const Logo = () => {
 
-
-    //*useRef sets changes to .current without re-rendering
     //*img,svg,container will start hidden
-    
-    //container (background)
-    // const bgRef = useRef();
-    // //svg outline
-    // const outlineLogoRef = useRef();
-    // //solid img 
-    // const solidLogoRef = useRef();
-
+    //fadeIn with animation css 
 
     //solid logo IMG, transparent logo SVG 
     //*to target SVG, SVG container is in gTag

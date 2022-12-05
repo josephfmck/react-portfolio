@@ -25,8 +25,8 @@
 //!LEARN
 //*Sass for loop 
 //uses idx for each letter's delay
-//? "text-animate _(1-35)"  
-@for $i from 1 through 35 {
+//? "text-animate _(1-40)"  
+@for $i from 1 through 40 {
     .text-animate._#{$i} {
         //tenths of a second i
         animation-delay: #{$i /10}s;

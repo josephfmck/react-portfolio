@@ -17,9 +17,10 @@ const Home = () => {
     console.log({nameArr, jobArr});
 
 
+
     //*useEffect
         //hover effect on animated text
-        //?setTimeout updates class from "text-animate" to "text-animate-hover" for 4s
+        //?setTimeout updates class from "text-animate" to "text-animate-hover" after 4s
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
