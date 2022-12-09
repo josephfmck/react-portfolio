@@ -8,7 +8,7 @@ import './index.scss'
 
 const Home = () => {
     //*State
-        //animated text, "text-animate" is the className
+        //animated text, "text-animate" is the className, doesnt have any css by default, just used to recognize class
         //set will be for hover "text-animate-hover"
     const [letterClass, setLetterClass] = useState('text-animate');
         //words on page
