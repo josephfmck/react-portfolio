@@ -26,7 +26,24 @@
     transform-origin: 100px 100px 0;
     //center entire cube to right half of page
     margin-left: calc(50% - 100px);
+
+    //faces of cube
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.4);
+        //icon size
+        font-size: 100px;
+        //centering
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
 }
+
 
 //12 seconds total
 @keyframes spincube {
