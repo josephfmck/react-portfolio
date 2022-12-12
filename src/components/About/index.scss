@@ -10,3 +10,44 @@
     margin-left: 0;
     overflow: hidden;
 }
+
+//spinning animation
+.cubespinner {
+    //custom animation
+    animation: spincube;
+    //smooth
+    animation-timing-function: ease-in-out;
+    //infinitely spinning 
+    animation-iteration-count: infinite;
+    //12 seconds then repeats
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    //center the rotation
+    transform-origin: 100px 100px 0;
+    //center entire cube to right half of page
+    margin-left: calc(50% - 100px);
+}
+
+//12 seconds total
+@keyframes spincube {
+    from,
+    to {
+        //start point
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83% {
+        transform: rotateX(90deg);
+    }
+}
