@@ -27,7 +27,7 @@
     //center entire cube to right half of page
     margin-left: calc(50% - 100px);
 
-    //faces of cube
+    //faces of cube (icons stacked without .faces)
     div {
         position: absolute;
         width: 200px;
@@ -42,18 +42,40 @@
         align-items: center;
         box-shadow: 0 0 20px 0px lightyellow;
     }
+
+    //faces for each icon
+    .face1 {
+        transform: translateZ(100px);
+    }
+    .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
 }
 
 
 //12 seconds total
 @keyframes spincube {
-    from,
-    to {
-        //start point
+    from {
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
+    to {
+        //start point
+        transform: rotateX(360deg) rotateY(720deg);
+    }
     16% {
-        transform: rotateY(-90deg);
+        transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
     }
     33% {
         transform: rotateY(-90deg) rotateZ(90deg);
@@ -62,7 +84,7 @@
         transform: rotateY(-180deg) rotateZ(90deg);
     }
     66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
+        transform: rotateY(-270deg) rotateX(90deg);
     }
     83% {
         transform: rotateX(90deg);
