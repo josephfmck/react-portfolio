@@ -1,7 +1,9 @@
 $primary-color: #ffd700;
 
-//import library
+//import animate library 
 @import 'animate.css';
+//import loader pacman animation
+@import '~loaders.css/src/animations/pacman.scss';
 
 //fonts
 @font-face {
@@ -25,7 +27,21 @@ textarea {
   font-family: 'Helvetica Neue';
 }
 
-
+//Loader pacman (class connected through type="pacman" in <About/>)
+.loader-active {
+  display: block;
+  position: absolute;
+  //entire page
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //centers pacman
+  margin: auto;
+  //adjusts positioning of pacman
+  width: 50px;
+  height: 50px;
+}
 
 
 // ---> <App/> 
