@@ -41,6 +41,9 @@ textarea {
   //adjusts positioning of pacman
   width: 50px;
   height: 50px;
+  //pacman shows then fades out as it loads the page
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
 
 

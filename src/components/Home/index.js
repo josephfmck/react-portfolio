@@ -5,6 +5,8 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import './index.scss'
+//loader react library
+import Loader from 'react-loaders';
 
 const Home = () => {
     //*State
@@ -33,6 +35,7 @@ const Home = () => {
         //idx _# part of class sets delay for letters, 12 = 1.2s 
         //? Hi, -> is manually made, while <AnimatedLetters/> is dynamic
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -51,6 +54,8 @@ const Home = () => {
             </div>
             <Logo />
         </div> 
+        <Loader type="pacman"/>
+        </>
      );
 }
 
