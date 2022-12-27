@@ -1,0 +1,39 @@
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            //fade in animation, moves upwards on pageload
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            //???
+            clear: both;
+        }
+
+        //name left half email right half
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            //???
+            clear: none;
+
+            //???
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
+//main layout of all pages
 import Layout from './components/Layout';
+//Route pages
 import Home from './components/Home';
 import About from './components/About';
+import Contact from './components/Contact';
 
 
 // index attribute is used to set it to the default route
@@ -15,6 +18,7 @@ function App() {
       <Route path="/" element={<Layout />} >
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
    </>

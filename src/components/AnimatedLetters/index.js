@@ -3,6 +3,8 @@ import './index.scss';
 //class we want to apply to chars 
 //arr of chars
 //idx of starting point - sets delay of animation
+//? letterClass is the default className and its iteration, text-animate and text-animate_#
+//? idx 15 = 1.5secs delay
 const AnimatedLetters = ({ letterClass, strArr, idx}) => {
     
     
