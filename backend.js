@@ -19,12 +19,16 @@ const app = express();
 
 app.use(cors())
 
+// localhost:8000 while running backend.js
 app.get('/', (req,res) => {
     res.json('hi')
 })
 
 
-
+//visit the url 
+app.get('/', (req,res) => {
+    res.json('hi')
+})
 
 
 
