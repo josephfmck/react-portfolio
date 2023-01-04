@@ -17,21 +17,26 @@ require('dotenv').config();
 //listen to port 8000, call express(), callback function
 const app = express();
 
-app.use(cors())
+app.use(cors());
 
 // localhost:8000 while running backend.js
 app.get('/', (req,res) => {
     res.json('hi')
-})
+});
 
 
 //visit the url 
-app.get('/', (req,res) => {
-    res.json('hi')
-})
+app.get('/api/keys', (req,res) => {
+    res.json({
+        publicKey: process.env.REACT_APP_PUBLIC_API_KEY,
+        privateKey: process.env.REACT_APP_EMAILJS_PRIVATE_API_KEY,
+        serviceID: process.env.REACT_APP_SERVICE_ID,
+        templateID: process.env.REACT_APP_TEMPLATE_ID
+    })
+});
 
 
 
 app.listen(8000, ()=>{
     console.log(`Listening on port ${PORT}`);
-})
+});
