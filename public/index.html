@@ -14,6 +14,11 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>React App</title>
+
+    <!--stylesheet for maps api-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -30,6 +35,7 @@
       (function(){
         //public key
         emailjs.init(process.env.REACT_APP_PUBLIC_API_KEY);
+        console.log({"hit": `${process.env.REACT_APP_PUBLIC_API_KEY}`})
       })();
     </script>
   </body>

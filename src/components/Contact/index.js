@@ -7,6 +7,9 @@ import emailjs from '@emailjs/browser'
 //import axios to grab keys from backend
 // import axios from 'axios'
 
+//import react leaftlet for map 
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 const strArr = ['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e'];
 
 
@@ -68,7 +71,6 @@ const Contact = () => {
       //!END event call
     }
 
-
   return (
     <>
         <div className='container contact-page'>
@@ -114,6 +116,24 @@ const Contact = () => {
                       </ul>
                     </form>
                 </div>
+            </div>
+            <div className="info-map">
+              Joe McKinney
+              <br/>
+              Lawrence
+              <br/>
+              KS
+              <br/>
+              66046
+              <span>josephfmck@gmail.com</span>
+            </div>
+            <div className='map-wrap'>
+            <MapContainer center={[38.960213, -95.277390]} zoom={13}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[38.960213, -95.277390]}>
+                <Popup>No, I don't live in this church, just the city!</Popup>
+              </Marker>
+            </MapContainer>
             </div>
         </div>
         <Loader type='pacman'/>
