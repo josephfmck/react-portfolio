@@ -90,7 +90,7 @@
             }
         } //!a
 
-        //?these 2 links also affected by hover and after
+        //?these links also affected by hover and after
         //?just placing text for them 
         //? COULD just place inside a{} and use &:about-link etc.
         a.about-link {
@@ -102,6 +102,12 @@
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+            }
+        }
+
+        a.portfolio-link {
+            &:after {
+                content: 'PORTFOLIO';
             }
         }
 
