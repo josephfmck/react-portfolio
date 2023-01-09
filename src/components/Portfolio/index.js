@@ -51,7 +51,6 @@ const Portfolio = () => {
       </div>
       <Loader type='pacman'/>
     </>
-
   )
 }
 

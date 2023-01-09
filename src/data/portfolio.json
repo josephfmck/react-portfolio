@@ -5,6 +5,12 @@
             "title": "National Parks",
             "description": "HTML, CSS, JS",
             "url": "http://google.com"
+        },
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "National Parks",
+            "description": "HTML, CSS, JS",
+            "url": "http://google.com"
         }
     ]
 }
