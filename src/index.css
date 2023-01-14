@@ -7,9 +7,35 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
   color: #444;
   background: #022c43;
+  /* removes scroll bar when overflowed */
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ??? */
+/* .dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+} */
+
+
+
+/** MOBILE */
+@media screen and (max-width: 1200px) {
+  body {
+    /* enable scroll bar when overflowed */
+    overflow: visible;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 /** ---> index.js*/

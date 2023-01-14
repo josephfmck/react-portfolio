@@ -150,3 +150,35 @@
 
     } //!ul
 } //!.nav-bar
+
+
+
+/** MOBILE */
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        background: transparent; //invisible
+        //?chose static for exactness, could be intial cuz initial would be default static.
+        position: static;
+        height: auto;
+        min-height: auto;
+
+        //?invisible icons 
+        ul, nav {
+            display: none;
+        }
+
+        //hamburger menu opens this .nav later on
+        nav {
+            //Make covering entire page
+            display: block; //?overwrite 
+            width: 100%; 
+            height: 100%;
+            background: #181818;
+            top: 0; 
+            left: 0;
+            position: fixed;
+            z-index: 2; 
+            margin: 0;
+        }
+    }
+}
