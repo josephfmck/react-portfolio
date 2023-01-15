@@ -169,8 +169,7 @@
 
         //hamburger menu opens this .nav later on
         nav {
-            //Make covering entire page
-            display: block; //?overwrite 
+            //Make covering entire page 
             width: 100%; 
             height: 100%;
             background: #181818;
@@ -179,6 +178,29 @@
             position: fixed;
             z-index: 2; 
             margin: 0;
-        }
-    }
+
+            a {
+                //center within nav
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            a:after {
+                //always see text
+                opacity: 1;
+                //?initial
+                position: relative;
+                //give it width so its placed to right of icon
+                width: auto;
+                margin-left: 10px;
+            }
+
+            //display icons at all times
+            a svg {
+                opacity: 1 !important;
+            } 
+
+        }//!nav
+    }//!.nav-bar
 }
