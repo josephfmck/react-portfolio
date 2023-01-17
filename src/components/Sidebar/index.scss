@@ -147,10 +147,13 @@
                 }
             }
         }
-
     } //!ul
 } //!.nav-bar
 
+//no menu on large screens
+.hamburger-icon {
+    display: none;
+}
 
 
 /** MOBILE */
@@ -201,6 +204,21 @@
                 opacity: 1 !important;
             } 
 
+            //*hamburger onClick shows this .nav 
+            //? nav.mobile-show
+            &.mobile-show {
+                display: block;
+            }
         }//!nav
+
+        //hamburger open and close btns 
+        .hamburger-icon,
+        .close-icon {
+            display: block;
+            //top right corner
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
     }//!.nav-bar
 }

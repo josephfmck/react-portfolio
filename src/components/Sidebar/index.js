@@ -1,9 +1,10 @@
 //react 
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 //icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 //assets
@@ -15,6 +16,11 @@ import './index.scss'
 
 
 const Sidebar = () => {
+
+    //mobile navigation hidden by default 
+    const [showNav, setShowNav] = useState(false)
+
+
     return (
         <div className='nav-bar'>
             <Link className='logo' to='/'>
@@ -39,38 +45,76 @@ const Sidebar = () => {
                 <img className='sub-logo' src={LogoSubtitle} alt="logo-subtitle"></img> */}
             </Link>
 
-            <nav>
+                {/* if showNav true add class .mobile-show */}
+            <nav className={showNav ? 'mobile-show' : ''}>
                 <NavLink exact="true" activeclassname="active" to='/'>
-                    <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
+                    <FontAwesomeIcon 
+                    icon={faHome} 
+                    color='#4d4d4e' 
+                    />
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className='about-link' to='/about'>
-                    <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                    <FontAwesomeIcon 
+                    icon={faUser} 
+                    color='#4d4d4e' 
+                    />
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
-                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+                    <FontAwesomeIcon 
+                    icon={faEnvelope} 
+                    color='#4d4d4e' 
+                    />
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className='portfolio-link' to='/portfolio'>
-                    <FontAwesomeIcon icon={faSuitcase} color='#4d4d4e' />
+                    <FontAwesomeIcon 
+                    icon={faSuitcase} 
+                    color='#4d4d4e' 
+                    />
                 </NavLink>
+                {/* navigation close btn */}
+                <FontAwesomeIcon
+                onClick={() => setShowNav(false)}
+                icon={faClose}
+                color="#ffd700"
+                size="3x"
+                className='close-icon'
+                />
             </nav>
 
             <ul>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/joe-mckinney-575b89158/'>
-                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e'/>
+                        <FontAwesomeIcon 
+                        icon={faLinkedin} 
+                        color='#4d4d4e'
+                        />
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://github.com/josephfmck'>
-                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e'/>
+                        <FontAwesomeIcon 
+                        icon={faGithub} 
+                        color='#4d4d4e'
+                        />
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.youtube.com/'>
-                        <FontAwesomeIcon icon={faYoutube} color='#4d4d4e'/>
+                        <FontAwesomeIcon 
+                        icon={faYoutube} 
+                        color='#4d4d4e'
+                        />
                     </a>
                 </li>
             </ul>
+            {/* Mobile Hamburger Menu */}
+                <FontAwesomeIcon 
+                onClick={() => setShowNav(true)}
+                icon={faBars}
+                color="#ffd700"
+                size="3x"
+                className='hamburger-icon'
+                />
         </div>
     )
 }
