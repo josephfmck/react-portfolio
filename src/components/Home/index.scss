@@ -97,3 +97,37 @@
         }
     }//!flat-button
 }//!home-page
+
+/** MOBILE */
+@media screen and (max-width: 1200px) {
+    //remove fancy tags
+    .tags,
+    .home-page h1::before,
+    .home-page h1::after {
+        display: none;
+    }
+
+    .home-page {
+        .text-zone {
+            position: initial;
+            width: 100%;
+            //?no animation transition
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        //contact btn
+        .flat-button {
+            float: none;
+            display: block;
+            //centered
+            margin: 20px auto 0 auto;
+            width: 125px;
+        }
+
+        .logo-container {
+            display: none;
+        }
+    }
+}
