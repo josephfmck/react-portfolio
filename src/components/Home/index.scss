@@ -126,8 +126,28 @@
             width: 125px;
         }
 
+        //*animated logo
         .logo-container {
-            display: none;
+            position: relative;
+            width: 100px;
+            height: auto;
+            //?overwrite the absolute stuff, centering logo
+            top: 50px;
+            right: 0;
+            box-sizing: border-box;
+            //?overwrite margin
+            margin: auto;
+            left: 0;
+
+            //?to be safe 
+            svg {
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: auto;
+                left: 0;
+                margin: auto;
+            }
         }
     }
 }
