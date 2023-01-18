@@ -11,6 +11,13 @@
         margin-top: 100px;
     }
 
+    .projects-container {
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        right: 10%;
+    }
+
     .images-container {
         display: flex;
         gap: 15px;
@@ -131,15 +138,36 @@
         padding: 20px;
         box-sizing: border-box;
 
-        h1.page-title {
-            margin-left: 20px;
-            margin-top: 20px;
+        //text above
+        .text-zone {
+            position: relative;
+
+            h1.page-title {
+                //clear margin
+                margin-left: 0px;
+                margin-top: 0px;
+            }
         }
 
-        .image-box {
-            height: 200px;
-            //1 per row
-            min-width: calc(100% - 10px);
+        //projects below
+        .projects-container {
+            //remove absolute stuff and center 1 a row
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+            h1.page-title {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+    
+            .image-box {
+                height: 200px;
+                //1 per row
+                min-width: calc(100% - 10px);
+            }
         }
     }
 }
