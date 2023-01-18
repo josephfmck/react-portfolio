@@ -53,9 +53,11 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
+        <div className='text-zone'>
           <h1 className='page-title'>
             <AnimatedLetters letterClass={letterClass} strArr={"Portfolio".split("")} idx={15}/>
           </h1>
+        </div>
           <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
       <Loader type='pacman'/>

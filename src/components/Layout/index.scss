@@ -138,5 +138,20 @@
         position: initial;
         height: auto; 
         min-height: auto;
+
+        //text-zone
+        &.about-page,
+        &.contact-page,
+        &.portfolio-page {
+            .text-zone {
+                position: initial;
+                width: 100%;
+                //?no animation transition
+                transform: none;
+                padding: 20px;
+                box-sizing: border-box;
+                display: block;
+            }
+        }
     }
 }
