@@ -10,7 +10,7 @@
 
     .logo {
         display: block;
-        padding: 8px 0;
+        padding: 8px 3px;
     }
 
     img {
@@ -88,6 +88,20 @@
                     content: 'HOME';
                 }
             }
+
+            &.active {
+                //active icon yellow
+                svg {
+                    color: #ffd700;
+                }
+            }
+
+            &.nonactive {
+                //nonactive icon to turn off active when switching pages
+                svg {
+                    color: #4d4d4e;
+                }
+            }
         } //!a
 
         //?these links also affected by hover and after
@@ -108,13 +122,6 @@
         a.portfolio-link {
             &:after {
                 content: 'PORTFOLIO';
-            }
-        }
-
-        a.active {
-            //active icon yellow
-            svg {
-                color: #ffd700;
             }
         }
     } //!.nav

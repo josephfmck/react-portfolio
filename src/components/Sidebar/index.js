@@ -17,6 +17,8 @@ import './index.scss'
 
 const Sidebar = () => {
 
+    //1-4 for nav links highlight
+    const [active, setActive] = useState(1)
     //mobile navigation hidden by default 
     const [showNav, setShowNav] = useState(false)
 
@@ -48,9 +50,12 @@ const Sidebar = () => {
                 {/* if showNav true add class .mobile-show */}
             <nav className={showNav ? 'mobile-show' : ''}>
                 <NavLink 
-                onClick={() => setShowNav(false)}
+                onClick={() => {
+                    setShowNav(false)
+                    setActive(1)
+                }}
+                className={active === 1 ? 'active' : 'nonactive'}
                 exact="true" 
-                activeclassname="active" 
                 to='/'
                 >
                     <FontAwesomeIcon 
@@ -59,10 +64,12 @@ const Sidebar = () => {
                     />
                 </NavLink>
                 <NavLink 
-                onClick={() => setShowNav(false)}
+                onClick={() => {
+                    setShowNav(false)
+                    setActive(2)
+                }}
                 exact="true" 
-                activeclassname="active" 
-                className='about-link' 
+                className={active === 2 ? 'about-link active' : 'about-link nonactive'} 
                 to='/about'
                 >
                     <FontAwesomeIcon 
@@ -71,10 +78,12 @@ const Sidebar = () => {
                     />
                 </NavLink>
                 <NavLink 
-                onClick={() => setShowNav(false)}
+                onClick={() => {
+                    setShowNav(false)
+                    setActive(3)
+                }}
                 exact="true" 
-                activeclassname="active" 
-                className='contact-link' 
+                className={active === 3 ? 'contact-link active' : 'contact-link nonactive'}
                 to='/contact'
                 >
                     <FontAwesomeIcon 
@@ -83,10 +92,12 @@ const Sidebar = () => {
                     />
                 </NavLink>
                 <NavLink 
-                onClick={() => setShowNav(false)}
+                onClick={() => {
+                    setShowNav(false)
+                    setActive(4)
+                }}
                 exact="true" 
-                activeclassname="active" 
-                className='portfolio-link' 
+                className={active === 4 ? 'portfolio-link active' : 'portfolio-link nonactive'} 
                 to='/portfolio'
                 >
                     <FontAwesomeIcon 

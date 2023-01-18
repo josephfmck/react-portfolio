@@ -26,7 +26,8 @@
         //!change img to J
         img, svg {
             width:53px;
-            margin-left: 20px;
+            margin-right: 1px;
+            margin-left: 10px;
             //fade in animation
             opacity: 0;
             animation: rotateIn 1s linear both;
@@ -149,5 +150,12 @@
                 margin: auto;
             }
         }
+    }
+}
+
+//? <480px
+@media screen and (max-width: 480px) {
+    .home-page h1 {
+        font-size: 10vw;
     }
 }
