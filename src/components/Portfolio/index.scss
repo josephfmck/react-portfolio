@@ -29,12 +29,12 @@
             position: relative;
             //3 image boxes per row
             //?grow shrink basis
-            flex: 1 1 32%;
+            flex: 1 1 50%;
             height: 400px;
             overflow: hidden;
             border-radius: 10px;
-            //-10px margin, 33% for the 3 boxes
-            max-width: calc(33% - 10px);
+            //-10px margin, 50% for the 2 boxes
+            max-width: calc(50% - 10px);
 
             .portfolio-image {
                 position: absolute;
@@ -170,6 +170,16 @@
                 //1 per row
                 min-width: calc(100% - 10px);
             }
+        }
+    }
+}
+
+@media screen and (480px <= width <= 1200px) {
+    //grow height for portfolio projects 
+    .projects-container {
+        //fix crunching down
+        .image-box {
+            min-height: 500px;
         }
     }
 }
