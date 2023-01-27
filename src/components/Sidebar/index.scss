@@ -11,6 +11,14 @@
     .logo {
         display: block;
         padding: 8px 3px;
+
+        //?for the errors of css properties in JSX
+        svg g {
+            stroke-linecap: "round";
+            fill-rule: "evenodd";
+            font-size: 9pt;
+            stroke-width: 0.25mm;
+        }
     }
 
     img {

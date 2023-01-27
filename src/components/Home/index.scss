@@ -32,6 +32,14 @@
             opacity: 0;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
+
+                //?for the errors of css properties in JSX
+                g#svgGroup {
+                    stroke-linecap: "round";
+                    fill-rule: "evenodd";
+                    font-size: 9pt;
+                    stroke-width: 0.25mm;
+                }
         }
 
         //h1::before
