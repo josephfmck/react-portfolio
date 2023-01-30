@@ -1,4 +1,15 @@
-$primary-color: #ffd700;
+//* this affects the loader only, pacman Loader reads this behind the scenes 
+$primary-color: #c8ff00;
+
+
+//*Custom colors 
+$black: #000000;
+$black2: #25211C;
+$white: #F1F0EA;
+$gray: #9DA18B;
+$background: #4B3E2E;
+$yellow: #E6BB5A;
+
 
 //import animate library 
 @import 'animate.css';

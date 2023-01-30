@@ -12,7 +12,7 @@
 }
 
 .tags {
-    color: #ffd700;
+    color: #c8ff00;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -68,7 +68,7 @@
     h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: #c8ff00;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -101,7 +101,7 @@
     }
     p {
         font-size: 13px;
-        color: #fff;
+        color: #f1f0ea;
         font-family: 'sans-serif';
         font-weight: 300;
         min-width: fit-content;
@@ -122,7 +122,7 @@
     //hover animation for h1
     .text-animate-hover {
         &:hover {
-            color: #fff;
+            color: #f1f0ea;
         }
     }
 }//!about-page

@@ -1,3 +1,8 @@
+.contact-page {
+    //adjust top margin for psuedo fancy tags 
+    top: 9%;
+}
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -45,7 +50,7 @@
         background: #115173;
         height: 50px;
         font-size: 16px;
-        color: #fff;
+        color: #f1f0ea;
         padding: 0 20px;
         box-sizing: border-box;
     }
@@ -56,7 +61,7 @@
         background: #115173;
         height: 50px;
         font-size: 16px;
-        color: #fff;
+        color: #f1f0ea;
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
@@ -64,13 +69,13 @@
 
     //send button
     .flat-button {
-        color: #ffd700;
+        color: #c8ff00;
         background: 0 0;
         font-size: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 1px solid #ffd700;
+        border: 1px solid #c8ff00;
         //right side of form
         float: right;
         border-radius: 4px;
@@ -80,13 +85,13 @@
 //setup right of the contact form
 .info-map {
     position: absolute;
-    background-color: #000;
+    background-color: #000000;
     top: 5%;
     right: 2%;
     z-index: 900;
     width: 200px;
     padding: 20px;
-    color: #fff;
+    color: #f1f0ea;
     font-family: 'Helvetice';
     font-size: 17px;
     font-weight: 300;
@@ -98,7 +103,7 @@
         font-size: 16px;
         display: block;
         padding-top: 20px;
-        color: #ffd700;
+        color: #c8ff00;
     }
 }
 

@@ -5,7 +5,7 @@ import '../Layout/index.scss';
 import './index.scss';
 //fonts
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 //loader react library
 import Loader from 'react-loaders';
 
@@ -28,25 +28,24 @@ const About = () => {
                 <AnimatedLetters letterClass={letterClass} strArr={strArr} idx={15}/>
             </h1>
             <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            Software Developer devoted to the craft of building beautifully designed 
+            functional websites and web applications.
             </p>
             <p>
-            I'm quite confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I am currently looking forward to finding a company that will allow me 
+            to further develop my skills and career.
             </p>
             <p>
-            If I need to define myself in one sentence that would be a family
-            person, a video game fanatic,
-            film enthusiast, and tech-obsessed!!!
+            My interests are engrossed in everything technology and business related, 
+            and my hobbies on the weekend tend to be about 
+            video games, film, and new ideas that pop out at me.
             </p>
         </div>
 
         <div className='stage-cube-container'>
            <div className='cubespinner'>
               <div className='face1'>
-                <FontAwesomeIcon icon={faAngular} color="#DD0031"/>
+                <FontAwesomeIcon icon={faNodeJs} color="#3C873A"/>
               </div>
               <div className='face2'>
                 <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
