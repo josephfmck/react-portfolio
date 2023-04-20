@@ -79,7 +79,12 @@ const Contact = () => {
                     <AnimatedLetters strArr={strArr} idx={15} letterClass={letterClass}/>
                 </h1>
                 <p>
-                  I am interested in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact me using the form below either.
+                I am interested in working with a company; large or small. 
+                - especially those with teams working on ambitious projects. 
+                </p>
+                <p>
+                If you have any questions, please do not hesitate to contact me 
+                through automated email using this form below.
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>
@@ -88,14 +93,14 @@ const Contact = () => {
                           <input 
                           type='text' 
                           name="name" 
-                          placeholder='Name' 
+                          placeholder='Your Name' 
                           required/>
                         </li>
                         <li className='half'>
                           <input 
                           type='email' 
                           name="email" 
-                          placeholder='Email' 
+                          placeholder='Your Email' 
                           required/>
                         </li>
                         <li>

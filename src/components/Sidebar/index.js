@@ -31,16 +31,12 @@ const Sidebar = () => {
                 height="40pt" 
                 viewBox="0 0 217 217" 
                 xmlns="http://www.w3.org/2000/svg">
-                    <g 
-                        id="svgGroup" 
-                        stroke-linecap="round" 
-                        fill-rule="evenodd" 
-                        font-size="9pt" 
-                        stroke="#ffd700" 
-                        stroke-width="0.25mm"
-                        fill="#ffd700" >
+                    <g  
+                        stroke="#c8ff00" 
+                        fill="#c8ff00" >
                         <path 
-                        d="M 0 217 L 146 217 L 217 145 L 217 0 L 163 0 L 91 71.5 L 73 71.5 L 0 145 L 0 217 Z M 2 146 L 53.5 146 L 53.5 181 L 91.5 181 L 91.5 75 L 144 75 L 144 215 L 2 215 L 2 146 Z M 147 73 L 215 5 L 215 145 L 147 213 L 147 73 Z M 163 2 L 214 2 L 144 72 L 93 72 L 163 2 Z M 73 74 L 89 74 L 89 109 L 55 143 L 4 143 L 73 74 Z M 56 145 L 89 112 L 89 145 L 56 178 L 56 145 Z M 89 148 L 89 179 L 58 179 L 89 148 Z" vector-effect="non-scaling-stroke"/>
+                        d="M 0 217 L 146 217 L 217 145 L 217 0 L 163 0 L 91 71.5 L 73 71.5 L 0 145 L 0 217 Z M 2 146 L 53.5 146 L 53.5 181 L 91.5 181 L 91.5 75 L 144 75 L 144 215 L 2 215 L 2 146 Z M 147 73 L 215 5 L 215 145 L 147 213 L 147 73 Z M 163 2 L 214 2 L 144 72 L 93 72 L 163 2 Z M 73 74 L 89 74 L 89 109 L 55 143 L 4 143 L 73 74 Z M 56 145 L 89 112 L 89 145 L 56 178 L 56 145 Z M 89 148 L 89 179 L 58 179 L 89 148 Z" 
+                        vector-effect="non-scaling-stroke"/>
                     </g>
                 </svg>
                 {/* <img src={LogoS} alt="logo"></img>
@@ -60,7 +56,7 @@ const Sidebar = () => {
                 >
                     <FontAwesomeIcon 
                     icon={faHome} 
-                    color='#4d4d4e' 
+                    color='#9da18b' 
                     />
                 </NavLink>
                 <NavLink 
@@ -74,7 +70,7 @@ const Sidebar = () => {
                 >
                     <FontAwesomeIcon 
                     icon={faUser} 
-                    color='#4d4d4e' 
+                    color='#9da18b' 
                     />
                 </NavLink>
                 <NavLink 
@@ -88,7 +84,7 @@ const Sidebar = () => {
                 >
                     <FontAwesomeIcon 
                     icon={faEnvelope} 
-                    color='#4d4d4e' 
+                    color='#9da18b' 
                     />
                 </NavLink>
                 <NavLink 
@@ -102,14 +98,14 @@ const Sidebar = () => {
                 >
                     <FontAwesomeIcon 
                     icon={faSuitcase} 
-                    color='#4d4d4e' 
+                    color='#9da18b' 
                     />
                 </NavLink>
                 {/* navigation close btn */}
                 <FontAwesomeIcon
                 onClick={() => setShowNav(false)}
                 icon={faClose}
-                color="#ffd700"
+                color="#c8ff00"
                 size="3x"
                 className='close-icon'
                 />
@@ -120,7 +116,7 @@ const Sidebar = () => {
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/joe-mckinney-575b89158/'>
                         <FontAwesomeIcon 
                         icon={faLinkedin} 
-                        color='#4d4d4e'
+                        color='#9da18b'
                         />
                     </a>
                 </li>
@@ -128,7 +124,7 @@ const Sidebar = () => {
                     <a target="_blank" rel='noreferrer' href='https://github.com/josephfmck'>
                         <FontAwesomeIcon 
                         icon={faGithub} 
-                        color='#4d4d4e'
+                        color='#9da18b'
                         />
                     </a>
                 </li>
@@ -136,7 +132,7 @@ const Sidebar = () => {
                     <a target="_blank" rel='noreferrer' href='https://www.youtube.com/'>
                         <FontAwesomeIcon 
                         icon={faYoutube} 
-                        color='#4d4d4e'
+                        color='#9da18b'
                         />
                     </a>
                 </li>
@@ -145,7 +141,7 @@ const Sidebar = () => {
                 <FontAwesomeIcon 
                 onClick={() => setShowNav(true)}
                 icon={faBars}
-                color="#ffd700"
+                color="#c8ff00"
                 size="3x"
                 className='hamburger-icon'
                 />

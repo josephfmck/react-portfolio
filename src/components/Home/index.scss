@@ -16,7 +16,7 @@
 
     //*IMPORTANT colored and sized to blend with img as a sentence
     h1 {
-        color: #fff;
+        color: #F1F0EA;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -32,6 +32,14 @@
             opacity: 0;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
+
+                //?for the errors of css properties in JSX
+                g#svgGroup {
+                    stroke-linecap: "round";
+                    fill-rule: "evenodd";
+                    font-size: 9pt;
+                    stroke-width: 0.25mm;
+                }
         }
 
         //h1::before
@@ -40,7 +48,7 @@
             content: '<h1>';
             font-family: 'La Belle Aurore';
             font-size: 18px;
-            color: #ffd700;
+            color: #c8ff00;
             opacity: 0.6;
             //place above h1 and indented
             position: absolute;
@@ -52,7 +60,7 @@
             content: '</h1>';
             font-family: 'La Belle Aurore';
             font-size: 18px;
-            color: #ffd700;
+            color: #c8ff00;
             opacity: 0.6;
             //place right of h1 and indented
             position: absolute;
@@ -65,7 +73,7 @@
 
     //?subtitle
     h2 {
-        color: #8d8d8d;
+        color: #9DA18B;
         margin-top: 20px;
         font-weight: 400;
         font-size: 11px;
@@ -76,14 +84,14 @@
 
     //?contact me Link 
     .flat-button {
-        color: #ffd700;
+        color: #c8ff00;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #ffd700;
+        border: 1px solid #c8ff00;
         //?some reason margin only works when float
         //?separates from absolute container
         float: left;
@@ -93,8 +101,8 @@
         white-space: nowrap;
 
         &:hover {
-            background: #ffd700;
-            color: #333;
+            background: #c8ff00;
+            color: #25211C;
         }
     }//!flat-button
 }//!home-page

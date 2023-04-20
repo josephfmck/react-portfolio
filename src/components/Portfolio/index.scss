@@ -65,7 +65,7 @@
             .title {
                 margin-bottom: 0;
                 margin-top: 0;
-                color: #fff;
+                color: #f1f0ea;
                 font-size: 24px;
                 font-weight: 500;
                 line-height: 24px;
@@ -74,7 +74,7 @@
             .description {
                 font-size: 14px;
                 margin-bottom: 5px;
-                color: #fff;
+                color: #f1f0ea;
                 font-weight: 700;
             }
 
@@ -84,10 +84,10 @@
                 padding: 0px 23px;
                 height: 40px;
                 line-height: 34px;
-                border: 2px solid #ffd700;
+                border: 2px solid #c8ff00;
                 border-radius: 4px;
                 font-size: 14px;
-                color: #fff;
+                color: #f1f0ea;
                 background: transparent;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -97,14 +97,14 @@
 
             .btn:hover {
                 transform: translateY(-3px);
-                background: #ffd700;
+                background: #c8ff00;
             }
 
             //*Overlay
             //?image-box after
             &:after {
                 content: "";
-                background: linear-gradient(180deg, #ffd700, #000);
+                background: linear-gradient(180deg, #c8ff00, #000000);
                 position: absolute;
                 //cover entire img box
                 left: 0;
