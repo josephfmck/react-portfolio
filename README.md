@@ -2,7 +2,6 @@
 
 Major frameworks/libraries used to bootstrap project. Leave any add-ons/plugins for the acknowledgements section.
 
-* [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

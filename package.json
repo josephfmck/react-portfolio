@@ -53,5 +53,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Major frameworks/libraries used to bootstrap project. Leave any add-ons/plugins for the acknowledgements section.",
+  "main": "backend.js",
+  "author": "",
+  "license": "ISC"
 }
