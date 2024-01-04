@@ -17,18 +17,6 @@
             "title": "National Parks",
             "description": "Firebase, Authentication",
             "url": "https://t4t-dev-dfe40.web.app/"
-        },
-        {
-            "cover": "/portfolio/1/one.png",
-            "title": "National Parks",
-            "description": "HTML, CSS, JS",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/portfolio/1/one.png",
-            "title": "National Parks",
-            "description": "HTML, CSS, JS",
-            "url": "http://google.com"
         }
     ]
 }
