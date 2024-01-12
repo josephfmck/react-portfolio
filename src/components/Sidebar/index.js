@@ -128,14 +128,6 @@ const Sidebar = () => {
                         />
                     </a>
                 </li>
-                <li>
-                    <a target="_blank" rel='noreferrer' href='https://www.youtube.com/'>
-                        <FontAwesomeIcon 
-                        icon={faYoutube} 
-                        color='#9da18b'
-                        />
-                    </a>
-                </li>
             </ul>
             {/* Mobile Hamburger Menu */}
                 <FontAwesomeIcon 
