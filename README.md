@@ -1,6 +1,12 @@
 ### Built With
 
-Major frameworks/libraries used to bootstrap project. Leave any add-ons/plugins for the acknowledgements section.
+React
+* [React](https://react.dev/)
+* [Animate CSS](https://animate.style/)
+* [EmailJS](https://www.emailjs.com)
+* [Fort Awesome](https://fortawesome.com)
+* [React Leaflet](https://www.npmjs.com/package/react-leaflet)
+* [CSS Loader](https://www.npmjs.com/package/css-loader)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -46,8 +52,6 @@ Project Link: [https://github.com/josephfmck/react-portfolio](https://github.com
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Animate CSS](https://animate.style/)
 * [EmailJS](https://www.emailjs.com)
