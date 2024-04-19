@@ -1,19 +1,19 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/1/ButterPort.png",
+            "cover": "portfolio/ButterPort.png",
             "title": "Butter Coding",
             "description": "NextJS, AI, MaterialUI",
             "url": "https://buttercoding.com/"
         },
         {
-            "cover": "/portfolio/1/one.png",
+            "cover": "portfolio/one.png",
             "title": "National Parks",
             "description": "API, React, onRender Deployment",
-            "url": "http://google.com"
+            "url": "https://national-parks-travel-guide.onrender.com/"
         },
         {
-            "cover": "/portfolio/1/t4t.png",
+            "cover": "portfolio/t4t.png",
             "title": "National Parks",
             "description": "Firebase, Authentication",
             "url": "https://t4t-dev-dfe40.web.app/"

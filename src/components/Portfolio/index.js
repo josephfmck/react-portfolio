@@ -19,11 +19,13 @@ const Portfolio = () => {
       <div className='images-container'>
         {
           portfolioDataArr.map((port, idx) => {
+            console.log(port);
+            console.log(port.cover);
             return (
               <div className='image-box' key={idx}>
                 <img 
                 className="portfolio-image"
-                src={port.cover} 
+                src={process.env.PUBLIC_URL + '/' + port.cover}
                 alt={port.title} />
                 <div className='content'>
                   <p className='title'>{port.title}</p>
