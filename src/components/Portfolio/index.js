@@ -24,13 +24,12 @@ const Portfolio = () => {
   
   //maps through data and renders portfolio items
   const renderPortfolio = (portfolioDataArr) => {
-    console.log("Image URL:", getImageUrl(port.cover)); // Logging image URL for debugging
-
     return (
       <div className='images-container'>
         {
           portfolioDataArr.map((port, idx) => {
-            console.log("Image URL:", `${process.env.PUBLIC_URL}/${port.cover}`);
+            console.log("Image URL:", getImageUrl(port.cover)); // Logging image URL for debugging
+
             return (
               <div className='image-box' key={idx}>
                 <img 
