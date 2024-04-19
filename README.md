@@ -1,5 +1,5 @@
 ## Website
-[https://josephfmck.github.io/react-portfolio]https://josephfmck.github.io/react-portfolio
+https://josephfmck.github.io/react-portfolio
 
 ### Built With
 
